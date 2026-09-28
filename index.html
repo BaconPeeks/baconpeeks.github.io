@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,9 +9,42 @@
   <title>Bacon Peeks | Portfolio</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <main class="splash" aria-labelledby="site-title">
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <button
+        class="hamburger-menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        ☰
+      </button>
+
+      <!-- Dropdown Navigation -->
+      <div id="nav-links" class="nav-links" hidden>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Main Portfolio -->
+  <main class="splash" id="home" aria-labelledby="site-title">
+
+    <!-- Background Stars -->
     <div class="stars" aria-hidden="true">
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
       <span class="star"></span>
       <span class="star"></span>
       <span class="star"></span>
@@ -36,14 +71,30 @@
       <span class="star"></span>
     </div>
 
+    <!-- Introduction -->
     <section class="intro">
+
       <p class="eyebrow">Portfolio</p>
+
       <h1 id="site-title">Bacon Peeks</h1>
-      <p class="tagline">Building clean, useful digital things with a little night-sky energy.</p>
+
+      <p class="tagline">
+        Building clean, useful digital things with a little night-sky energy.
+      </p>
+
       <div class="actions" aria-label="Portfolio actions">
-        <a class="button primary" href="https://github.com/BaconPeeks">View GitHub</a>
+        <a
+          class="button primary"
+          href="https://github.com/BaconPeeks"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View GitHub
+        </a>
       </div>
+
     </section>
+
   </main>
 </body>
 </html>
