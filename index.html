@@ -15,25 +15,18 @@
   <!-- Navigation Header -->
   <header class="site-header">
     <nav class="navbar" aria-label="Main navigation">
-
-      <button
-        class="hamburger-menu"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        ☰
-      </button>
-
-      <!-- Dropdown Navigation -->
-      <div id="nav-links" class="nav-links" hidden>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-
+      <details class="menu">
+        <summary class="hamburger-menu" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </summary>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a class="project-link" href="https://github.com/BaconPeeks/Titanium" target="_blank" rel="noopener noreferrer">
+            <strong>Titanium</strong><small>Network analysis toolkit</small>
+          </a>
+          <a href="https://github.com/BaconPeeks" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </details>
     </nav>
   </header>
 
